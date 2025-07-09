@@ -1,0 +1,94 @@
+/* Slider wrapper */
+.slider-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Title */
+.slider-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* Each slide container */
+.slide-item {
+  display: flex !important;
+  justify-content: center;
+}
+
+/* Testimonial card */
+.testimonial-box {
+  position: relative;
+  background: transparent;
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 700px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.testimonial-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #ffffff30, #ffffff80);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  z-index: -1;
+}
+
+
+/* Image style */
+.testimonial-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Text style */
+.testimonial-name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.testimonial-message {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-photo {
+    margin-bottom: 20px;
+  }
+}
+
+.slide-item {
+    padding: 0 10px; /* Slayderlar orasida bo‘sh joy */
+  }
+  
+  .testimonial-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  

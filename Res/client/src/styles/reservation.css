@@ -1,0 +1,28 @@
+/* umumiy tanlovlar */
+.select{
+  @apply h-11 px-3 rounded border border-gray-300 bg-gray-50;
+}
+.btn-primary{
+  @apply h-11 px-4 rounded bg-red-600 text-white font-semibold hover:bg-red-700 disabled:opacity-40;
+}
+.btn-success{
+  @apply h-11 px-4 rounded bg-green-600 text-white font-semibold hover:bg-green-700 disabled:opacity-40;
+}
+
+/* step nav */
+.step{@apply text-gray-500 cursor-default;}
+.step-active{@apply text-red-700 font-semibold relative;}
+.step-active::after{
+  content:"";@apply absolute left-0 -bottom-px w-full h-0.5 bg-red-700;
+}
+
+/* slotlar */
+.slot-row{ @apply grid grid-cols-6 gap-2; }
+.slot{ @apply h-9 rounded border border-gray-300 bg-gray-200 text-gray-500 text-sm cursor-not-allowed; }
+.slot-active{ @apply h-9 rounded bg-red-600 text-white text-sm font-semibold hover:bg-red-700;}
+.slot-ghost{ @apply h-9 rounded border border-red-600 text-red-600 text-sm hover:bg-red-50; }
+
+/* kichik ekran moslashuv */
+@media (max-width:640px){
+  .slot-row{@apply grid-cols-3;}
+}

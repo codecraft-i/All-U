@@ -1,0 +1,123 @@
+.contact-section {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364) !important;
+  border-radius: 20px;
+  padding: 40px 20px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "YOPQ" 300;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "YOPQ" 300;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.map-box {
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 100%;
+  height: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.office {
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 100%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.office h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.office p {
+  margin-bottom: 5px;
+}
+
+.office a {
+  color: #00aaff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.office a:hover {
+  text-decoration: underline;
+}
+
+
+.office {
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 100%;
+  background-color: #f9f9f9;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-left: 5px solid #3498db;
+}
+
+.office:hover {
+  transform: translateY(-5px);
+}
+
+.office h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.office p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+.office a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.office a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}

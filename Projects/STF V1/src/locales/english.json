@@ -1,0 +1,123 @@
+{
+    "home": "Home",
+    "edu_in_karelia": "Education in Karelia",
+    "universities": "Universities",
+    "about_us": "About Us",
+    "contact_us": "Contact Us",
+
+    "homeIntro1": "WE WILL HELP YOU GO TO KOREA 🇰🇷 ✈️",
+    "homeIntro2": "Study at the most prestigious universities in Korea and shape your future!",
+    "homeIntro3": "🎓 Open doors to global opportunities with a Master's degree!",
+
+    "consultion": "CONSULTATION",
+    "cons_text": "Leave your information to get a FREE consultation and contact us!",
+
+    "study_international": "Students studying abroad",
+    "std_2": "Years of experience in the field of education",
+    "std_3": "Total scholarships awarded to our students",
+    "std_4": "Guarantee of university admission",
+
+    "our_services": "Our services",
+    "bachelor_education_in_korea": "Bachelor's education in Korea",
+    "master_education_in_korea": "Master's education in Korea",
+    "language_courses": "Language Courses",
+    "professional_education": "Professional Education",
+    "more_information": "More information",
+
+    "famous_universities": "Famous Universities",
+    "all": "All",
+    "about": "About",
+
+    "stf_consulting_founder": "Founder of STF CONSULTING",
+    "founder_intro": "I am Toshmamatov Sarvarjon, the founder of STF CONSULTING. I have spent over 5 years in Korea and have contributed to successfully sending more than 93 students to universities in South Korea.",
+    "advice_intro": "I have a few important tips for young people who intend to study in Korea:",
+    "language_learning_tip": "• Learning the language is the key. Even if you plan to apply for a program taught in English, take the time to learn Korean. It will greatly ease not only your studies but also your daily life.",
+    "culture_acceptance_tip": "• Embrace the culture. Korea stands out with its unique customs, values, and societal rules. Approaching these differences with respect will make it easier for you to adapt to the new environment.",
+    "discipline_tip": "• Discipline is the key to success. Korean universities place great emphasis on strict discipline and responsibility. Attending classes on time and completing assignments diligently will lead you to good results and a respected reputation in society.",
+    "final_message": "Going to Korea is not just about studying; it's stepping into a whole new stage of life. Take every step consciously, responsibly, and with preparation.",
+
+    "our_partners": "OUR PARTNERS",
+    "spring_2025_semester_results": "Spring 2025 Semester Results",
+    "visa_congratulations": "Congratulations!",
+
+    "bachelor": "Bachelor",
+    "master": "Master",
+    "language_course": "Language Course",
+    "vocational_education": "Vocational Education",
+
+    "get_in_touch": "Get in touch",
+    "head_office": "Head office",
+    "phone": "Phone",
+    "telegram_channel": "Telegram channel",
+
+    "send_contact": "Send Contact",
+    "send": "Send",
+    "name": "Name",
+
+    "social_media": "Social Media",
+
+    "bachelor_study_info": "To pursue a bachelor's degree in South Korea, an F-2 (student) visa is required. This visa is intended for international students who wish to study full-time in undergraduate, master's, or doctoral programs at Korean universities. Bachelor's programs typically last 4 years, but in engineering and some technical fields, the study period can extend to 5–6 years.",
+
+    "visa_obtainment": "Visa Obtaining (D-2 Student Visa)",
+    "submit_documents": "You need to submit documents to the Korean embassy for a D-2 visa.",
+    "application_review_time": "The application review usually takes 2–4 weeks.",
+    "work_during_study": "Work Opportunities During Study",
+    "work_permission": "With a D-2 visa, students are allowed to work 20 hours per week.",
+    "post_study_work": "After graduation, you can work in Korea with a D-10 or E-7 visa.",
+
+    "passport": "International passport",
+    "photo": "Photo 3.5×4.5 (2 pieces)",
+    "certificate_translation": "Certificate/diploma/attestat apostilled and translated by Korea Pro Visa Consulting",
+    "bank_statement": "Bank statement from KDB Bank confirming 1-month deposit:\n- $16,000 for Seoul, Gyeonggi, and Incheon\n- $13,000 for other regions",
+    "language_certificate": "Language Certificate: \nTOPIK 3\n- IELTS 5.5 (minimum 5.5 in Listening and Reading sections)",
+    "language_certificate_MASTER": "Language Certificate: \nWithout a topic and TOPIK 3",
+    "language_certificate_LC": "Language Certificate: \nLanguage proficiency is not required, but having a TOPIK is a big advantage.",
+    "language_certificate_VE": "Language Certificate:\n- TOPIK 2\n- IELTS 5.5 (minimum 5.5 in Listening and Reading sections)",
+    "birth_certificate_copy": "Copy of birth certificate",
+    "parents_passport_copy": "Copy of parents' passports",
+    "parents_income_documents": "Documents showing parents' official income:\n- Annual income certificate (from mygov.uz)\n- Work record extract (from mygov.uz)\n- If no official income but self-employed or farming:\n  • Business license, bank turnover and balance certificate\n  • Property and land ownership certificates (from mygov.uz)\n  • Bank account balance certificate (optional, additional document if needed)",
+    "study_plan": "Study Plan (Write about study plans in Korea and future goals after returning)",
+    "single_certificate": "Certificate of unmarried status (obtained from mygov.uz)",
+
+    "download_document_list": "Download document list",
+
+    "masters_degree_info": "To study for a Master's degree (Graduate School, Master’s Degree) in South Korea, a D-2 (student) visa is required. This visa is intended for international students planning to pursue full-time master's programs at Korean universities. The duration of master's programs is typically 2 years.",
+
+    "bachelor_visa_documents": "Required documents for Bachelor's visa (D-2)",
+    "masters_visa_documents": "Required documents for Master's visa (D-2)",
+    "work_and_opportunities_after_masters": "Work and opportunities during and after Master's program",
+    "language_requirements": "Language requirements",
+
+    "topik": "TOPIK (Test of Proficiency in Korean)",
+    "topik_requirement": "Without a topic and Topic 3",
+    "ielts_toefl": "IELTS/TOEFL",
+    "ielts_requirement": "If the program is in English, an IELTS score of 5.5 or higher may be required",
+
+    "work_and_opportunities_during_and_after_masters": "Work and opportunities during and after Master's program",
+    "work_right_with_d2_visa": "Master's students with a D-2 visa have the right to work 30 hours per week",
+    "work_after_study_with_d10_e7_visa": "After graduation, it is possible to work in Korea with a D-10 (job seeking visa) or E-7 (specialist work visa)",
+    "job_opportunities_for_masters_graduates": "Master's graduates have the opportunity to find jobs in major companies like Samsung, Hyundai, LG, and Naver",
+
+    "patkurs_popularity": "\"PATKURS\" or \"POD KURS\" language courses are very popular in South Korea. To learn Korean in Korea, a D-4 (study/training) visa is required. These courses offer the opportunity to learn the Korean language from native Koreans.",
+    "study_duration_planned": "Planned for at least 6 months of study",
+    "visa_duration": "Usually granted for 6 months or 2 years",
+    "age_limit": "There is an age limit. (18 to 21 years old)",
+    "classes_per_week": "4-5 days of classes per week",
+    "language_course_visa_documents": "Required documents for a language course visa (D-4):",
+
+    "vocational_training_visa": "A D-2 (Vocational Training) visa is required to receive vocational education in South Korea. This visa is intended for those who want to study in vocational training centers or practical programs at universities. After completing the training, it is possible to legally work in Korea by transitioning to an E-7 (Specialist Worker) visa. Vocational training programs typically last for 2 years and consist of 3-4 days of classes per week.",
+    "vocational_training_visa_documents": "Required documents for vocational training visa (D-2):",
+
+    "states": "States",
+    "found": "Found",
+    "country": "Country",
+    "ranking": "Ranking",
+    "campus_tour": "Campus Tour",
+    "more_details": "More Details",
+    "programmes": "Programmes",
+    "scholarships": "Scholarships",
+    "requirements": "Requirements",
+    "clear_all": "Clear all",
+
+    "Done": "Done"
+}

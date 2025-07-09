@@ -1,0 +1,73 @@
+.contact-section {
+  background: linear-gradient(45deg, #283048, #304352);
+  border-radius: 20px;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.map-box {
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 100%;
+  height: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.office {
+  flex: 1 1 300px;
+  min-width: 300px;
+  max-width: 100%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.office h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.office p {
+  margin-bottom: 10px;
+}
+
+.office a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.office a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}

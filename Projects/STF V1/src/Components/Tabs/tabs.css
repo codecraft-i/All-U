@@ -1,0 +1,107 @@
+.activeTab {
+  color: red;
+}
+
+.tabs-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #0f3057;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px 0;
+  font-weight: bold;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  color: #ffd700;
+}
+
+.tab-btn.active {
+  color: #ffc107;
+}
+
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background-color: #ffc107;
+}
+
+.tab-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.tab-img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.tab-title {
+  color: #ff8c42;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tab-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tab-img {
+    margin-bottom: 20px;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+  }
+
+  .tab-btn {
+    border-bottom: 1px solid #444;
+  }
+
+  .tab-btn.active::after {
+    left: 0;
+    width: 100%;
+  }
+}
+

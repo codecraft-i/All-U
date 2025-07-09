@@ -1,0 +1,77 @@
+.docs-container {
+  background-color: none;
+  color: white;
+  padding: 40px 20px;
+}
+
+.docs-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.doc-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: transparent;
+}
+
+.doc-badge {
+  background-color: #cb9f27;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  min-width: 36px;
+  min-height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doc-text {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .docs-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-text {
+    font-size: 15px;
+  }
+}
+
+.download-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.download-btn {
+  background-color: #d50000;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-btn:hover {
+  background-color: #d62828;
+}
+.download-btn > span {
+  margin: 0 5px 0 0;
+}

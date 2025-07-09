@@ -1,0 +1,214 @@
+.home-container {
+    width: auto;
+    height: auto;
+}
+.homeIntroBox {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px;
+    background: none;
+    color: white;
+  }
+  
+  .hero-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    min-height: 280px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 10px;
+    
+    text-decoration: none;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .consult-btn {
+    background: linear-gradient(to right, #69090e, #ff0000);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .consult-btn:hover {
+    background: linear-gradient(to right, #ff0000, #69090e);
+  }
+  
+  .hero-buttons p {
+    max-width: 300px;
+    font-size: 16px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .hero-image img {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-text h1 {
+      font-size: 28px;
+    }
+  
+    .hero-buttons p {
+      font-size: 15px;
+    }
+  }
+  
+
+
+
+
+
+
+
+  .hello-popup {
+    position: relative !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+    z-index: 100000;
+  }
+  
+  .hello-popup #cancelCanHomeBtn {
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+#cancelCanHomeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+
+@media (max-width: 600px) {
+  #cancelCanHomeBtn {
+    top: 100px;
+    transform: scale(0.8);
+  }
+}
+
+
+
+
+
+
+
+
+.app-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.baseContactSendingBox {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364) !important;
+  border-radius: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 0 20px;
+}
+.baseContactSendingBox > .sendDataForm {
+  background: none !important;
+}
+.baseContactSendingBox > .sendDataForm > h2 {
+  color: #eee;
+}
+
+.title,
+.card-grid {
+    text-decoration: none;
+    font-family: "Unbounded", sans-serif;
+    font-style: normal;
+}

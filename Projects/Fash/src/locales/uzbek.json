@@ -1,0 +1,141 @@
+{
+    "home": "Asosiy",
+    "edu_in_karelia": "Koreyada ta'lim",
+    "universities": "Universitetlar",
+    "about_us": "Biz haqimizda",
+    "contact_us": "Bog'lanish",
+
+    "homeIntro1": "Fash Edu bilan chet elda talaba bo‘ling",
+    "homeIntro2": "Turkiya, Italiya va Xitoyning nufuzli universitetlarida ta’lim oling va orzularingiz sari yo‘l oching!",
+    "homeIntro3": "🎓 Kafolatlangan qabul va magistratura darajasi bilan kelajagingizni bugundan boshlang!",
+
+    "consultion": "KONSULTATSIYA",
+    "cons_text": "BEPUL konsultatsiya olish uchun ma'lumotlaringizni qoldiring va biz bilan bog'laning!",
+
+    "study_international": "Chet elda o‘qiyotgan talabalar",
+    "std_2": "Ta’lim sohasida yillik tajriba",
+    "std_3": "O‘quvchilarimizning olgan umumiy stipendiyasi",
+    "std_4": "Universitetga qabul qilinish kafolati",
+
+    "our_services": "Bizning hizmatlarimiz",
+    "bachelor_education_in_korea": "Koreyada Bakalavr ta'lim",
+    "master_education_in_korea": "Koreyada Magistratura ta'lim",
+    "language_courses": "Til Kurslari",
+    "professional_education": "Kasbiy ta'lim",
+    "more_information": "Batafsil ma'lumot",
+
+    "famous_universities": "Mashhur Universitetlar",
+    "all": "Barchasi",
+    "about": "Batafsil",
+
+    "founder_intro": "Fash Edu Consulting – 2019-yilda tashkil etilgan bo‘lib, xalqaro ta’lim sohasida yetakchi kompaniyalardan biridir. Kompaniya yoshlar uchun dunyoning eng nufuzli universitetlarida o‘qish imkoniyatlarini yaratishga ixtisoslashgan. Biz Turkiya, Italiya va Xitoydagi top universitetlarga kirish jarayonida abituriyentlarga to‘liq qo‘llab-quvvatlash xizmatlarini taqdim etamiz.",
+    "advice_intro": "NEGA AYNAN BIZ?",
+    "language_learning_tip_head": "1. Rasmiy hamkorlik",
+    "language_learning_tip": "Biz Turkiyadagi eng yaxshi universitetlar bilan bevosita hamkorlik qilamiz. Hamkorlarimiz qatoriga Istanbul Kent University, Marmara University, Beykoz University va yana 30 dan ortiq universitetlar kiradi.",
+    "culture_acceptance_tip_head": " 2. 100% kafolatlangan natija",
+    "culture_acceptance_tip": "Biz orqali hujjat topshirgan har bir talaba kafolatli ravishda qabul qilinadi.",
+    "culture_acceptance_tip_desc_head": " 3. To‘liq qo‘llab-quvvatlash xizmati",
+    "culture_acceptance_tip_desc": "Universitet tanlash, stipendiyalar, turar joy, viza va boshqa zarur xizmatlarni taqdim etamiz.",
+
+    "discipline_tip": "Fash Edu Consulting – bu shunchaki ta’lim agentligi emas, balki sizning kelajagingiz sari ishonch bilan qadam qo‘yishingizda yo‘l ko‘rsatuvchi hamkoringizdir.",
+    "final_message": "Fash Edu sizga taqdim etayotgan barcha universitetlar bilan rasmiy hamkorlik asosida ishlaydi.",
+
+    "our_partners": "HAMKORLARIMIZ",
+
+    "spring_2025_semester_results": "2025-YIL BAHORGI SEMESTR NATIJALARI",
+    "visa_congratulations": "VIZA MUBORAK!",
+
+    "bachelor": "Bakalavr",
+    "master": "Magistratura",
+    "language_course": "Til kursi",
+    "vocational_education": "Kasbiy ta'lim",
+
+    "get_in_touch": "Bog'laning",
+    "head_office": "Bosh ofis",
+    "phone": "Telefon",
+    "telegram_channel": "Telegram kanali",
+
+    "send_contact": "Kontakt Yuborish",
+    "send": "Yuborish",
+    "name": "Ism",
+
+    "social_media": "Ijtimoiy tarmoqlar",
+
+    "bachelor_study_info": "Janubiy Koreyada bakalavr darajasida ta'lim olish uchun D-2 (talaba) vizasi talab etiladi. Ushbu viza Koreya universitetlarida bakalavriat, magistratura yoki doktorantura bosqichlarida to‘liq vaqtli ta'lim olishni istagan xalqaro talabalar uchun mo‘ljallangan. Bakalavriat dasturlari odatda 4 yil davom etadi, biroq muhandislik va ba'zi texnik yo‘nalishlarda tahsil muddati 5–6 yilgacha cho‘zilishi mumkin.",
+
+    "visa_obtainment": "Viza olish (D-2 talaba vizasi)",
+    "submit_documents": "Koreya elchixonasiga D-2 vizasi uchun hujjat topshirish kerak.",
+    "application_review_time": "Ariza ko‘rib chiqish odatda 2-4 hafta davom etadi.",
+    "work_during_study": "O‘qish paytida ishlash imkoniyati",
+    "work_permission": "D-2 vizasi bilan talabalar haftasiga 20 soat ishlash huquqiga ega.",
+    "post_study_work": "O‘qishdan keyin D-10 yoki E-7 vizasi bilan Koreyada ishlash mumkin.",
+
+    "passport": "Xorijga chiqish pasporti",
+    "photo": "Rasm 3.5×4.5 (2 dona)",
+    "certificate_translation": "Shahodatnoma/diplom/attestat apostilli Korea Pro Viza Consulting tomonidan tarjima qilinadi",
+    "bank_statement": "KDB bankdan ma'lumotnoma pul 1 oy turganligi to'g'risida ma'lumotnoma:\n- 16 000$ Seul, Gyeongi va Inchon uchun\n- 13 000$ qolgan hududlar uchun",
+    "bank_statement_MASTER": "KDB bank shot ❌ \nYillik daromad ❌",
+    "language_certificate": "Til sertifikati:\n- TOPIK 3\n- IELTS 5.5 (Listening va Reading qismlari 5.5 kam bo'lmasligi kerak)",
+    "language_certificate_MASTER": "Til sertifikati:\n TOPIKsiz va Topik 3",
+    "language_certificate_VE": "Til sertifikati:\n- TOPIK 2\n- IELTS 5.5 (Listening va Reading qismlari 5.5 kam bo'lmasligi kerak)",
+    "language_certificate_LC": "Til sertifikati: \nTil bilishi shart emas agar TOPIK bulsa juda yaxshi",
+    "birth_certificate_copy": "Tug'ilganlik guvohnomasi (metrika) nusxasi",
+    "parents_passport_copy": "Ota-ona passport nusxasi",
+    "parents_income_documents": "Ota-ona rasmiy daromadini ko'rsatuvchi hujjatlar:\n- Ota-ona yillik daromadi haqida ma'lumotnoma (mygov.uz saytidan)\n- Ota-ona mehnat daftarchasidan ko'chirma (mygov.uz saytidan)\n- Agarda ota-ona rasmiy daromadi mavjud bo'lmasadan tadbirkorlik yoki qishloq xo'jaligida band bo'lsa unda:\n  • Tadbirkorlik guvohnomasi, bankdan aylama va qolqich ko'rsatilgan ma'lumotnoma\n  • Mol-mulk va yer maydonlari egalik huquqini ko'rsatuvchi ma'lumotnoma (mygov.uz saytidan)\n  • Bankda hisob raqamida mablag' mavjudligi to'g'risida ma'lumotnoma (bu ma'lumotnoma faqat qo'shimcha sifatida daromad ko'rsatilsa berilishi mumkin uzi shart emas)",
+    "study_plan": "Study plan (Koreyaga borib o'qish rejasi va qaytib kelgach kelajak maqsadlari haqida yoziladi)",
+    "single_certificate": "Turmush qurmaganlik to'g'risida ma'lumotnoma (mygov.uz saytida olinadi)",
+
+    "download_document_list": "Hujjat ro'yhatini yuklab olish",
+
+    "masters_degree_info": "Janubiy Koreyada magistratura (Graduate School, Master’s Degree) bosqichida ta'lim olish uchun D-2 (talaba) vizasi talab etiladi. Ushbu viza Koreya universitetlarida to‘liq vaqtli magistratura dasturlarida o‘qishni rejalashtirgan xalqaro talabalar uchun mo‘ljallangan. Magistratura dasturlarining o‘qish muddati odatda 2 yilni tashkil etadi.",
+
+    "bachelor_visa_documents": "Bakalavr vizasi (D-2) uchun kerakli hujjatlar ro'yxati",
+    "masters_visa_documents": "Magistratura vizasi (D-2) uchun kerakli hujjatlar ro'yxati",
+    "work_and_opportunities_after_masters": "Magistratura davomida ishlash va o‘qishdan keyingi imkoniyatlar",
+    "language_requirements": "Til talablari",
+
+    "topik": "TOPIK (Test of Proficiency in Korean)",
+    "topik_requirement": "Topiksiz va Topik 3",
+    "ielts_toefl": "IELTS/TOEFL",
+    "ielts_requirement": "Agar dastur ingliz tilida bo‘lsa, IELTS 5.5 yoki undan yuqori ball talab qilinishi mumkin",
+
+    "work_and_opportunities_during_and_after_masters": "Magistratura davomida ishlash va o‘qishdan keyingi imkoniyatlar",
+    "work_right_with_d2_visa": "D-2 vizasi bilan magistr talabalariga haftasiga 30 soat ishlash huquqi beriladi",
+    "work_after_study_with_d10_e7_visa": "O‘qishdan keyin D-10 (ish qidirish vizasi) yoki E-7 (ixtisoslashgan ishchi vizasi) bilan Koreyada ishlash mumkin",
+    "job_opportunities_for_masters_graduates": "Magistratura bitiruvchilari Samsung, Hyundai, LG, Naver kabi yirik kompaniyalarda ish topish imkoniyatiga ega",
+
+    "patkurs_popularity": "\"PATKURS\" yoki \"POD KURS\" nomlari bilan tanilgan til kurslari Janubiy Koreyada juda mashhurdir. Koreyada koreys tilini o‘rganish uchun D-4 (ta'lim/trening) vizasi talab etiladi. Ushbu kurslar koreys tilini asli koreyslardan o‘rganish imkoniyatini taqdim etadi.",
+    "study_duration_planned": "Kamida 6 oy davomida o’qishga rejalashtirilgan",
+    "visa_duration": "Odatda 6 oy yoki 2 yil muddatgacha beriladi",
+    "age_limit": "Yosh chegarasi mavjud. (18yoshdan 21yoshgacha)",
+    "classes_per_week": "Haftasiga 4-5 kun dars",
+    "language_course_visa_documents": "Til kursi vizasi (D-4) uchun kerakli hujjatlar ro'yxati:",
+
+    "vocational_training_visa": "Janubiy Koreyada kasbiy ta'lim olish uchun D-2 (Kasbiy ta'lim/trening) vizasi talab qilinadi. Ushbu viza kasbiy o‘quv markazlari yoki universitetlar qoshidagi amaliy bilim beruvchi dasturlarda ta'lim olishni xohlaganlar uchun mo‘ljallangan. Ta'limni tamomlaganidan so‘ng, E-7 (Ixtisoslashtirilgan ishchi) vizasiga o‘tish orqali Koreyada qonuniy ravishda ishlash mumkin. Kasbiy ta'lim dasturi odatda 2 yil davom etadi va haftasiga 3-4 kun darsdan iborat.",
+    "vocational_training_visa_documents": "Kasbiy ta’lim vizasi (D-2) uchun kerakli hujjatlar ro' yxati:",
+
+    "states": "Shaharlar",
+    "found": "Topildi",
+    "country": "Mamlakat",
+    "ranking": "Reyting",
+    "campus_tour": "Kampus sayohati",
+    "more_details": "Batafsil ma'lumot",
+    "programmes": "Dasturlar",
+    "scholarships": "Stipendiyalar",
+    "requirements": "Talablar",
+    "clear_all": "Tozalash",
+
+    "Done": "Muvaffaqiyatli Yuborildi",
+
+    "std": "O‘quv Dasturlari",
+
+    "std_turkey": "Turkiyada ta'lim",
+    "std_italy": "Italiyada ta'lim",
+    "std_china": "Xitoyda ta'lim",
+
+    "results" : "Natijalar",
+    "thoughts" : "Fikrlar",
+
+    "students": "O'QUVCHILARIMIZ",
+    "countries": "DAVLATLAR"
+}

@@ -1,0 +1,174 @@
+/* Umumiy konteyner */
+.sendDataH2Title {
+  text-decoration: none;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "YOPQ" 300;
+}
+.phone-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  background: white;
+  padding: 5px;
+  border-radius: 30px;
+  gap: 10px;
+  flex-wrap: nowrap; /* Ensures no wrapping */
+}
+
+/* Tanlangan davlat (chapdagi flag + kod) */
+.selected-country {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.selected-country:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.phone-flag {
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
+}
+
+/* Telefon raqam input */
+input[type="text"] {
+  flex-grow: 1;
+  min-width: 180px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+/* Dropdown */
+.phone-dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 999;
+  margin-top: 4px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdowndagi element */
+.phone-dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.phone-dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Qidiruv input */
+.phone-search {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Xato xabari */
+.phone-error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+/* Konsultatsiya tugmasi */
+button[type="submit"] {
+  background: linear-gradient(to right, #ff1744, #d50000);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 15px 24px !important;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+  opacity: 80%;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .phone-container {
+    flex-direction: row; /* Keeps the items in a row */
+    align-items: center;  /* Ensures items are vertically aligned */
+    gap: 10px;  /* Maintain space between the elements */
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+
+  input[type="text"] {
+    min-width: unset;
+    width: 100%;  /* Ensure the input field takes the remaining width */
+  }
+
+  .selected-country {
+    flex-shrink: 0; /* Prevent the country selector from shrinking */
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.sendDataForm {
+  width: 500px;
+  height: auto;
+  background: #eee;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.inputSendText {
+  padding: 15px 0 15px 20px !important;
+}
+
+@media (max-width: 500px) {
+  .sendDataForm {
+    width: 350px;
+    padding: 15px;
+  }
+  .sendDataForm > h2 {
+    font-size: 1.2rem;
+  }
+  .inputSendText {
+    padding: 10px 0 10px 10px !important;
+  }
+  .phone-container {
+    padding: 0px !important;
+  }
+  button[type="submit"] {
+    padding: 10px !important;
+  }
+}

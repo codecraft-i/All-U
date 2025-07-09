@@ -1,0 +1,198 @@
+.author-section {
+  background-color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "YOPQ" 300;
+  font-weight: 600;
+  
+}
+
+.author-section::before,
+.author-section::after {
+  content: "";
+  position: absolute;
+  background-color: #141e46;
+  /* opacity: 0.8; */
+  z-index: 0;
+  border-radius: 50%;
+}
+.author-section::after {
+  background: linear-gradient(to right, #69090e, #ff0000) !important;
+}
+
+/* Chap yuqori to‘liq doira */
+.author-section::before {
+  width: 100px;
+  height: 100px;
+  top: -30px;
+  left: -30px;
+}
+
+/* Pastki o‘ng yarim doira */
+.author-section::after {
+  width: 120px;
+  height: 120px;
+  bottom: -40px;
+  right: -40px;
+  border-radius: 0 100% 0 0;
+}
+
+/* Qo‘shimcha kreativ bezaklar */
+.author-section .shape1,
+.author-section .shape2,
+.author-section .shape3 {
+  content: "";
+  position: absolute;
+  background-color: rgba(237,20,41,255);
+  /* opacity: 0.7; */
+  z-index: 0;
+}
+
+/* Past chap kvadrat-oval */
+.author-section .shape1 {
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 50% 0 0;
+}
+
+/* Yuqoridan pastga tushib turgan chiziqli doira */
+.author-section .shape2 {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+/* Yuqori o‘ngdagi cut-corner */
+.author-section .shape3 {
+  width: 80px;
+  height: 80px;
+  top: 20px;
+  right: 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 20% 100%, 0 80%);
+}
+
+/* Content */
+.author-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.author-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: grid;
+  place-items: center;
+
+  /* border-radius: 50% !important; */
+  padding: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.author-image-wrapper > span {
+  font-size: 4rem;
+}
+.at-logo-item2 {
+  background: linear-gradient(to right, #69090e, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.author-image {
+  width: 200px;
+  height: auto;
+  background-size: cover;
+  /* object-fit: cover; */
+  /* border-radius: 50%; */
+}
+
+.author-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.author-subtitle {
+  color: #f1c93b;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.author-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.author-desc {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .author-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .author-text {
+    margin-top: 10px;
+  }
+
+  .author-section::after {
+    width: 80px;
+    height: 80px;
+    bottom: -20px;
+    right: -20px;
+  }
+
+  .author-section::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .author-section .shape1 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .author-section .shape2 {
+    display: none;
+  }
+
+  .author-section .shape3 {
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .author-image {
+    width: 140px;
+    height: auto;
+  }
+}

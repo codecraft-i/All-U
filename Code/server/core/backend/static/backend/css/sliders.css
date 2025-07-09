@@ -1,0 +1,24 @@
+/* Main Slider */
+.carousel { position: relative; width: 380px; overflow: hidden; }
+.carousel-images { display: flex; transition: transform 0.5s ease-in-out; }
+.carousel img { width: 380px; height: 600px; border-radius: 50px; }
+.buttons { position: absolute; top: 50%; width: 100%; height: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); }
+.btn { background: transparent; color: transparent; border: none; padding: 10px; cursor: pointer; border-radius: 50px; }
+.indicators { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; }
+.indicator { width: 10px; height: 10px; margin: 5px; background: #FFFFFF; border-radius: 50%; cursor: pointer; }
+.active { background: linear-gradient(135deg, #06ABE5, #7A5AF8); }
+
+/* Mobile Version Slider */
+.top-carousel { position: relative; width: 330px; height: 270px; overflow: hidden; }
+.top-carousel-images { display: flex; transition: transform 0.5s ease-in-out; }
+.top-carousel img { width: 330px; height: 270px; border-radius: 30px; }
+.top-buttons { position: absolute; top: 50%; width: 100%; height: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); }
+.top-btn { background: transparent; color: transparent; border: none; padding: 8px; cursor: pointer; border-radius: 30px; }
+.top-indicators { position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%); display: flex; }
+.top-indicator { width: 8px; height: 8px; margin: 3px; background: #FFFFFF; border-radius: 50%; cursor: pointer; }
+.top-active { background: linear-gradient(135deg, #06ABE5, #7A5AF8); }
+
+.topSlider {
+    display: none;
+    pointer-events: none;
+}

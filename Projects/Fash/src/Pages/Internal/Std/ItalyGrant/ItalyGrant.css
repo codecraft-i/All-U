@@ -1,0 +1,31 @@
+.italy-grant-container {
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #222;
+  background-color: var(--background-color);
+  border-radius: 16px;
+}
+
+.sys-h1-it-text {
+  font-size: 2.4em;
+  background: linear-gradient(to right, #003399, #0066cc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Boshqa barcha `.card`, `.intro`, `.conclusion`, `.icon` va `.card-header` klasslarini ChinaGrant.css'dan ko‘chirib, ranglar o‘zgartiriladi yoki saqlab qolish mumkin. */
+
+
+.card:nth-child(7) {
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc); /* Yangi rang kombinatsiyasi */
+}
+
+.card:nth-child(8) {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee); /* Yana bir chiroyli gradient */
+}

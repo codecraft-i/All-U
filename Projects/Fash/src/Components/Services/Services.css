@@ -1,0 +1,83 @@
+/* src/components/InfoCards.css */
+
+.cards-container {
+  width: auto;
+  height: auto;
+  background-color: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-family: "Unbounded", sans-serif;
+  font-style: normal;
+}
+#title-services {
+  text-decoration: none;
+  font-family: "Unbounded", sans-serif;
+  font-style: normal;
+  margin-top: 40px !important;
+}
+
+.card {
+  background: linear-gradient(45deg, #cb9f27 1%, #283E51 10%);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title,
+.baseCardTitle,
+#baseCardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #eee;
+  margin-bottom: 1.5rem;
+}
+
+.card-button {
+  background: linear-gradient(to right, #ff1744, #d50000);
+  color: #eee;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  opacity: 80%;
+}
+
+/* Responsive tweaks */
+@media (min-width: 640px) {
+  .card {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  #title-services {
+    font-size: 0.8rem !important;
+  }
+}

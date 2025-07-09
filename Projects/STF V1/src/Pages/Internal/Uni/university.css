@@ -1,0 +1,235 @@
+.uniItemMainBox {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 15px !important; */
+}
+.uniMainName {
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: auto;
+    background: none !important;
+}
+.uniMainName > h1 {
+    font-size: 1.4rem;
+    background: linear-gradient(to right, #ff1744, #d50000);
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.text-lg-uni {
+    font-size: 1.1rem;
+    display: inline-table;
+}
+.text-lg-uni > span {
+    background: #3f4c6b5b;
+    padding: 1px;
+    border-radius: 5px;
+}
+.mt-4-mg {
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 80px 20px 40px 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.video-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.video-section iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.description-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.main-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.extra-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-section iframe {
+    height: 200px;
+  }
+
+  .description-section {
+    text-align: center;
+  }
+}
+
+
+
+/* Mobile First (small devices) */
+@media (max-width: 576px) {
+  .uniItemMainBox {
+    height: auto;
+    padding: 20px 10px;
+    background-position: center;
+  }
+
+  .uniMainName > h1 {
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    margin-top: 5px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .video-section iframe {
+    height: 200px;
+  }
+
+  .description-section {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .main-description, .extra-description {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .overlay {
+    padding: 60px 10px 30px 10px;
+  }
+}
+
+/* Tablet (medium devices) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .uniItemMainBox {
+    height: auto;
+    padding: 30px 20px;
+    background-position: center;
+  }
+
+  .uniMainName > h1 {
+    font-size: 1.5rem;
+    padding: 6px 10px;
+    margin-top: 8px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .video-section iframe {
+    height: 250px;
+  }
+
+  .description-section {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .overlay {
+    padding: 70px 20px 40px 20px;
+  }
+}
+
+/* Small Desktop and up */
+/* Small Desktop (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .uniItemMainBox {
+    height: auto; /* auto qildik, 90vh emas */
+    background-position: center;
+    padding: 20px 10px;
+  }
+
+  .content-wrapper {
+    flex-direction: column; /* ROW emas, COLUMN qilib qo'yamiz */
+    gap: 20px;
+    padding: 20px;
+    max-width: 90%; /* container widthni kichikroq qildik */
+  }
+
+  .video-section {
+    width: 100%;
+  }
+
+  .video-section iframe {
+    height: 250px;
+  }
+
+  .description-section {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem; /* text ozgina kichik */
+  }
+
+  .main-description, .extra-description {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .overlay {
+    padding: 60px 20px 30px 20px;
+  }
+}
+
+.more-details-link {
+  display: inline-block;
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #007BFF, #0056b3);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.more-details-link:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}

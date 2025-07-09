@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  Agar “reservation.css” degan maxsus
+    qo‘shimcha fayl bo‘lsa, import qilib yuborasiz */
+@import "./styles/reservation.css";

@@ -1,0 +1,81 @@
+.stats-section {
+  width: auto;
+  height: auto;
+  background: none;
+  padding: 40px 20px;
+  color: white;
+
+  text-decoration: none;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #ffffff30, #ffffff80) 1;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.stat-value {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-description {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Move 2nd and 4th cards upward */
+.stat-card:nth-child(2),
+.stat-card:nth-child(4) {
+  margin-top: -10px;
+}
+
+/* Animate on scroll */
+.hidden-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, minmax(0, 300px)); /* 3 columns, fixed or flexible width */
+    justify-content: center; /* Ensure cards are centered */
+  }
+}

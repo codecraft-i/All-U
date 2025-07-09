@@ -1,0 +1,118 @@
+.game-section {
+    width: auto;
+    height: auto;
+    background: none;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "YOPQ" 300;
+  }
+  
+  .game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .top-text {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #222;
+  }
+  
+  .view-all {
+    background: linear-gradient(to right, #ff0000, #69090e);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Unbounded", sans-serif;
+    font-style: normal;
+  }
+  
+  .game-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .game-card {
+    background: white;
+    width: 180px;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .game-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .game-card img {
+    width: 100%;
+    border-radius: 15px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .genre {
+    margin: 10px 0 5px;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .explore-btn {
+    background: linear-gradient(to right, #ff0000, #69090e);
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .explore-btn.blue {
+    background: yellowgreen !important;
+  }
+  
+  /* 📱 Responsive styles */
+  @media (max-width: 768px) {
+    .game-cards {
+      justify-content: center;
+    }
+    .game-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .game-card {
+      width: 100%;
+    }
+  }  

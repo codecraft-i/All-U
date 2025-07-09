@@ -1,0 +1,97 @@
+.contact-container1122 {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+/* Wrapper for aligning list over button */
+.contact-wrapper1122 {
+  width: 200px;
+  display: flex;
+  flex-direction: column-reverse; /* Ensures button is at the bottom */
+  align-items: flex-end;
+  position: relative;
+}
+
+.contact-toggle1122 {
+  background: linear-gradient(to right, #ff1744, #d50000);
+  color: white;
+  border: none;
+  padding: 16px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Lower than list */
+}
+
+.contact-toggle1122:hover {
+  background-color: #0056b3;
+}
+
+.contact-list1122 {
+  margin-bottom: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.3s ease-out;
+  z-index: 2; /* Higher than the button */
+  position: absolute;
+  bottom: 60px; /* manually push above the button */
+  right: 0;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-list1122 a {
+  text-decoration: none;
+  color: #333;
+  margin: 5px 0;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-list1122 a:hover {
+  color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-container1122 {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .contact-toggle1122 {
+    padding: 14px 14px;
+    font-size: 18px;
+  }
+
+  .contact-list1122 {
+    width: 160px;
+    bottom: 55px;
+    padding: 8px;
+  }
+
+  .contact-list1122 a {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+}

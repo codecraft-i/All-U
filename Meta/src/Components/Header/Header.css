@@ -1,0 +1,320 @@
+/* ---------- Ranglar ---------- */
+:root {
+  --primary:  #123228;          /* Header & dropdown background */
+  --text:     #ffffff;
+  --backdrop: rgba(0,0,0,0.55);
+}
+
+/* ---------- Umumiy ---------- */
+.header{
+  position:sticky;
+  top:0;
+  width:100%;
+  z-index:1000;
+
+  /* 1) Boshlanishida butkul shaffof */
+  background:none;
+  color:var(--text);
+  padding:0 25px;
+  transition:background .35s ease, backdrop-filter .35s ease,
+             box-shadow .35s ease;
+}
+.header--blur {
+  /* Yengil gradient / yarim shaffof fon */
+  background:rgba(18,50,40,.50);
+  backdrop-filter:blur(14px) saturate(130%);
+  -webkit-backdrop-filter:blur(14px) saturate(130%);
+  box-shadow:0 1px 3px rgba(0,0,0,.25);
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+.header__container {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+/* ---------- Logo ---------- */
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+/* ---------- Linklar ---------- */
+.nav a,
+.menu-trigger,
+.mobile-nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  padding: .25rem 0;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+.nav a {
+  position: relative;
+}
+.menu-with-dropdown {
+  position: relative;
+}
+.nav .navBaseLink::before,
+.menu-with-dropdown::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 2.5px;
+  background: rgb(230, 177, 95);
+  border-radius: 5px;
+  transition: .5s ease;
+}
+.nav a:hover,
+.menu-trigger:hover,
+.mobile-nav a:hover {
+  color: rgb(230, 177, 95);
+}
+.nav a:hover::before,
+.menu-with-dropdown:hover::before,
+.active-link::before {
+  width: 100% !important;
+}
+.active-link {
+  color: rgb(230, 177, 95) !important;
+}
+/* ---------- Desktop nav ---------- */
+.desktop-nav {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+}
+
+/* ========== MEGA DROPDOWN ========== */
+.menu-with-dropdown { position: relative; }
+
+/* -- hover/klik ko‘prik -- */
+.menu-with-dropdown::after {
+  content: "";
+  position: absolute;
+  background: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 28px;      /* header ↔ dropdown oralig‘i */
+  pointer-events: auto;
+}
+
+/* -- dropdown box -- */
+.dropdown {
+  position: fixed;
+  left: 0;
+  top: 130px;        /* header balandligi */
+  width: 100vw;
+  background: var(--primary);
+  padding: 2.5rem 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity .25s ease, transform .25s ease;
+  z-index: 1000;
+}
+.header--dp {
+  top: 90px !important;
+}
+.dropdown.visible {     /* klik bilan ko‘rinadi */
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* -- grid -- */
+.menu-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 2rem;
+}
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: .75rem;
+}
+
+/* -- Hover holati -- */
+.menu-with-dropdown:hover .dropdown,
+.dropdown:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ========== Arrow (rotate) ========== */
+.menu-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+}
+.arrow {
+  font-size: .7rem;
+  transition: transform .25s ease;
+  transform: rotate(180deg); /* default ↑ */
+}
+.arrow.open,
+.menu-with-dropdown:hover .arrow,
+.dropdown:hover .arrow {
+  transform: rotate(0deg);   /* ↓ */
+}
+
+/* ---------- Burger icon (desktop yashirin) ---------- */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* ---------- Mobile drawer ---------- */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 75%;
+  max-width: 320px;
+  background: var(--primary);
+  padding: 4rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transform: translateX(-100%);
+  transition: transform .3s ease-in-out;
+  z-index: 1001;
+}
+.mobile-nav.open { transform: translateX(0); }
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* ---------- backdrop (mobil) ---------- */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--backdrop);
+  z-index: 1000;
+}
+
+/* ---------- Media queries ---------- */
+@media (max-width: 968px) {
+  .desktop-nav { display: none; }
+  .burger { display: block; }
+  /* mega dropdown mobilda ko‘rinmas */
+  .menu-with-dropdown .dropdown { display: none; }
+}
+
+
+/* 2. Broning tugmasi */
+.booking-btn {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.5rem 0.7rem !important;
+  font: 600 0.95rem/1.2 "Inter", system-ui, sans-serif;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+
+  /* Gradient + subtle glass blur */
+  background: linear-gradient(135deg, #184e3e 0%, #3fa271 40%, #d6b15e 100%);
+  backdrop-filter: blur(3px) saturate(155%);
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  /* Depth */
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.25),
+    0 6px 16px rgba(0, 0, 0, 0.25);
+
+  /* Smooth transitions */
+  transition:
+    transform 0.25s cubic-bezier(.21,1.02,.73,1),
+    box-shadow 0.25s ease,
+    background-position 0.4s ease;
+  background-size: 150% 150%;           /* parallax-ga o‘xshash shift */
+}
+
+/* 2a. Icon – ichki ↗︎ strelka */
+
+/* 3. Hover / focus holati */
+.booking-btn:hover,
+.booking-btn:focus-visible {
+  background-position: 50% 0;
+  transform: translateY(-3px);
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.25),
+    0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* 4. Active – bosilganda */
+.booking-btn:active {
+  transform: translateY(0);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.35),
+    0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* 5. Accessibility: klaviatura focus */
+.booking-btn:focus-visible {
+  outline: 3px solid #d6b15e;
+  outline-offset: 3px;
+}
+
+/* 6. Kichik ekranlar uchun biroz ixchamroq */
+@media (max-width: 480px) {
+  .booking-btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+.booking-btn__icon {
+  width: 1em;            /* matn bilan mutanosib */
+  height: 1em;
+  transition: transform 0.25s cubic-bezier(.21,1.02,.73,1);
+  transform: translateX(2px);    /* boshlang‘ich engil surilish */
+}
+.booking-btn:hover .booking-btn__icon,
+.booking-btn:focus-visible .booking-btn__icon {
+  transform: translateX(6px);    /* strelka siljishi */
+}

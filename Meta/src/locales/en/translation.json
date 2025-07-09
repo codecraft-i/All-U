@@ -1,0 +1,14 @@
+{
+  "header": {
+    "home": "Home",
+    "menus": "Menus",
+    "about_us": "About Us",
+    "contact": "Contact",
+    "booking": "Booking"
+  },
+  "intro": {
+    "int_head": "True Taste of the Nation",
+    "int_n1": "Fragrant tradition, modern flair",
+    "int_n2": "the perfected glow of Uzbek cuisine in every dish."
+  }
+}

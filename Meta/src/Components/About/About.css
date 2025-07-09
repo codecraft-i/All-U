@@ -1,0 +1,120 @@
+/* About.css */
+
+/* ------ 1. Global o'zgaruvchilar ------ */
+:root {
+  --clr-bg: #f9fafb;
+  --clr-accent: rgb(230, 177, 95); /* oltin */
+  --radius: 1rem;
+  --max-width: 1200px;
+  --spacing: clamp(1rem, 2vw, 2rem);
+}
+
+/* ------ 2. Asosiy bo'lim ------ */
+.about-section {
+  padding-block: clamp(3rem, 6vw, 5rem);
+  background: none;
+}
+
+.about-container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+/* ------ 3. Yagona grid ------ */
+.about-grid {
+  display: grid;
+  gap: var(--spacing);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
+
+/* Rasmni biroz kichraytirish */
+.about-image {
+  max-width: 560px;
+  margin-inline: auto;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Matn */
+.about-content h2 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  border-radius: 10px;
+  margin-bottom: 0.75em;
+  color: var(--clr-accent);
+}
+
+.about-content p {
+  font-size: 1rem;
+  color: #d9e4e0;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+/* ------ 4. Statistika ------ */
+.stats-heading {
+  font-size: clamp(1.4rem, 2vw, 1rem); /* ⬅️ kattaroq sarlavha */
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 10px 0;
+  color: #d9e4e0;
+  text-align: center;
+  margin: 2.5rem 0 1.5rem;
+}
+
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background-image: url(../../assets/pattern-dark.png);
+  list-style: none;
+  padding: 0;
+}
+
+.stat-item {
+  flex: 1 1 clamp(140px, 20%, 220px);
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  font-family: 'Hidayatullah';
+  color: var(--clr-accent);
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #d9e4e0;
+  margin-top: 0.25em;
+}
+
+/* ------ 5. Animatsiya: fade-in ------ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ------ 6. Qo'shimcha media query ------ */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in,
+  .in-view {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

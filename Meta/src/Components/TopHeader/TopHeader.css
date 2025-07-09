@@ -1,0 +1,77 @@
+/* ==== 1. FON (“glass” effekt) ======================================== */
+.top-header {
+  /* Yarim shaffof oq + blur → oyna effekti */
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+  font-size: 15px;
+  color: #e2c089;             /* oltinsimon matn rang */
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+/* Markaziy konteyner */
+.top-header .inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;            /* Tor ekranlarda satr uzilish */
+}
+
+/* ==== 2. LINK STYLE =================================================== */
+.item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  padding: 4px 0;
+  transition: color 0.25s ease;
+}
+
+.item:hover,
+.item:focus-visible {
+  color: #ffdaaa;             /* hoverda yorqin oltin */
+}
+
+/* Vertikal separator (faqat katta ekranda) */
+.item:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.35);
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* ==== 3. ICON STYLE =================================================== */
+.icon {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+/* ==== 4. RESPONSIV MEDIA QUERIES ===================================== */
+@media (max-width: 768px) {
+  .top-header { font-size: 14px; }
+
+  /* Mobilda separator yo‘q */
+  .item:not(:last-child)::after { display: none; }
+
+  .top-header .inner { gap: 16px; }
+}
+
+@media (max-width: 480px) {
+  /* Juda tor ekran — har bir item alohida qatorda */
+  .top-header .inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Hidayatullah';
+  src: url('./assets/fonts/hidayatullah DEMO.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #2E4F2A;
+  --color-accent:  #9C4A3A;
+  --color-secondary: #0A2E3D;
+
+  --color-light: #F7F5F0;
+  --color-dark:  #1A1A1A;
+
+  --primary-pg: #d9e4e0;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  --font-sans: 'Raleway', sans-serif;
+  --font-alt:  'Montserrat', sans-serif;
+  --font-base-size: 16px;
+  --heading-line-height: 1.2;
+}
+
+html {
+  font-size: var(--font-base-size);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-dark);
+  /* background-color: var(--color-light); */
+  background: #18312e;
+  line-height: 1.6;
+}
+
+/* 4. Headings */
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: var(--font-alt); */
+  font-family: 'Hidayatullah';
+  line-height: var(--heading-line-height);
+  color: var(--primary-pg);
+  /* color: #fff; */
+  margin-bottom: var(--space-md);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+
+/* 5. Links & Buttons */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-accent);
+}

@@ -1,0 +1,14 @@
+{
+  "header": {
+    "home": "Startseite",
+    "menus": "Speisekarte",
+    "about_us": "Über uns",
+    "contact": "Kontakt",
+    "booking": "Reservierung"
+  },
+  "intro": {
+    "int_head": "Der wahre Geschmack der Nation",
+    "int_n1": "Duftende Tradition, moderne Note",
+    "int_n2": "der vollendete Glanz der usbekischen Küche in jedem Gericht."
+  }
+}

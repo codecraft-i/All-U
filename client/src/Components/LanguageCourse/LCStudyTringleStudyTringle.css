@@ -1,0 +1,142 @@
+.mag-container {
+  background-color: none;
+  color: white;
+  padding: 40px 20px;
+}
+
+.mag-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mag-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mag-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+/* Har bir card umumiy stil */
+.mag-card {
+  position: relative;
+  background-color: white;
+  color: black;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  padding: 24px;
+  flex: 1 1 300px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mag-card:hover {
+  transform: translateY(-5px);
+}
+
+.mag-icon {
+  font-size: 32px;
+  color: #d50000;
+  z-index: 2;
+}
+
+/* CARD BACKGROUND EFFECTS */
+.mag-card::before,
+.mag-card::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+/* Card 1 */
+.mag-card:nth-child(1)::before {
+  width: 200px;
+  height: 200px;
+  background: #ff4c68;
+  top: -50px;
+  left: -50px;
+}
+.mag-card:nth-child(1)::after {
+  width: 150px;
+  height: 150px;
+  background: #ffb347;
+  bottom: -30px;
+  right: -30px;
+}
+
+/* Card 2 */
+.mag-card:nth-child(2)::before {
+  width: 200px;
+  height: 200px;
+  background: #6a0dad;
+  top: -50px;
+  right: -40px;
+}
+.mag-card:nth-child(2)::after {
+  width: 150px;
+  height: 150px;
+  background: #20b2aa;
+  bottom: -30px;
+  left: -30px;
+}
+
+/* Card 3 */
+.mag-card:nth-child(3)::before {
+  width: 200px;
+  height: 200px;
+  background: #00bfff;
+  top: -60px;
+  left: -30px;
+}
+.mag-card:nth-child(3)::after {
+  width: 150px;
+  height: 150px;
+  background: #ff69b4;
+  bottom: -30px;
+  right: -30px;
+}
+
+.mag-card:nth-child(4)::before {
+  width: 200px;
+  height: 200px;
+  background: #9900ff;
+  top: -60px;
+  left: -30px;
+}
+.mag-card:nth-child(4)::after {
+  width: 150px;
+  height: 150px;
+  background: #ffe469;
+  bottom: -30px;
+  right: -30px;
+}
+
+.mag-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .mag-title {
+    font-size: 22px;
+  }
+
+  .mag-card {
+    flex: 1 1 100%;
+  }
+}
